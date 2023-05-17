@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your website description goes here.">
+  <meta name="keywords" content="your, keywords, go, here">
+  <meta name="author" content="Your Name">
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="text/css" href="signup-style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+        <label for="middleName">Middle Name:</label>
+        <input type="text" id="middleName">
+        <label for="phoneNumber">Phone Number:</label>
+        <select id="countryCode">
+          <option value="+234">Nigeria (+234)</option>
+          <!-- Add more country codes here -->
+        </select>
+        <input type="tel" id="phoneNumber" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required>
+        <button type="submit" id="signupButton">Sign Up</button>
+        <div id="signupLoader" class="loader"></div>
+      </form>
+    </div>
+  </div>
+  <script src="signup-script.js"></script>
+</body>
+</html>

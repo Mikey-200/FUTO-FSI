@@ -1,0 +1,123 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffe7f7, #f1f1f1);
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  background-color: #f8f8f8;
+  width: 200px;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: #FF69B4;
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input, button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button {
+  background-color: #FF69B4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+ul#transactionsList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sticky-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sticky-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sticky-menu ul li {
+  display: inline-block;
+}
+
+.sticky-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.sticky-menu ul li a.active {
+  background-color: #FF69B4;
+}
+
+/* Form Clearing */
+form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Loading Animation */
+.loader {
+  margin: 0 auto;
+  display: none;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #FF69B4;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
